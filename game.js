@@ -34,7 +34,6 @@ const showWinner = (userWin, userChoice, compChoice) => {
 
 const playGame = (userChoice) => {
     const compChoice = getCompChoice();
-    console.log("Comp Choice = ", compChoice);
 
     if (userChoice === compChoice) {
         drawGame();
