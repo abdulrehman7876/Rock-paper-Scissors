@@ -14,20 +14,17 @@ const getCompChoice = () => {
 };
 
 const drawGame = ()=> {
-    console.log("Game is draw.");
     msg.innerText = "Game is draw";
     msg.style.backgroundColor = "#5C6784"; 
 }
 
 const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
-        console.log("You Win!");
         userScore++;
         userScorePara.innerText = userScore;
         msg.innerText = `You Win! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     } else {
-        console.log("You lose!");
         compScore++;
         compScorePara.innerText = compScore;
         msg.innerText = `You Lose! ${compChoice} beats Your ${userChoice}`;
@@ -36,7 +33,6 @@ const showWinner = (userWin, userChoice, compChoice) => {
 };
 
 const playGame = (userChoice) => {
-    console.log("User Choice = ", userChoice);
     const compChoice = getCompChoice();
     console.log("Comp Choice = ", compChoice);
 
